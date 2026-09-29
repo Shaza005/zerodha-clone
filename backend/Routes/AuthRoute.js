@@ -8,7 +8,7 @@ const {
   verifyUser,
 } = require("../Controllers/AuthController");
 
-const protect = require("../middlewares/AuthMiddleware");
+const protect = require("../Middlewares/AuthMiddleware");
 
 router.post("/register", register);
 router.post("/login", login);
