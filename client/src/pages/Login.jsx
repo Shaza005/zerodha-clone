@@ -42,8 +42,8 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
-        }, 1000);
+  window.location.href = "https://zerodha-dashboard-qyvx.onrender.com";
+}, 1000);
       } else {
         handleError(message);
       }
