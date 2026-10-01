@@ -3,7 +3,7 @@ import "./Signup.css";
 
 function Signup() {
   const goToSignup = () => {
-    window.location.href = "https://zerodha-client.onrender.com/register";
+    window.location.href = "https://zerodha-client.onrender.com/signup";
   };
 
   const goToLogin = () => {
