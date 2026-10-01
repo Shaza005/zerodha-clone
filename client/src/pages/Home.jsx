@@ -14,7 +14,7 @@ const Home = () => {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "http://localhost:3002",
+        "https://zerodha-clone-1-0k9u.onrender.com",
         {},
         { withCredentials: true }
       );
