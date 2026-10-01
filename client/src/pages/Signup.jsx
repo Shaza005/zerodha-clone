@@ -34,8 +34,10 @@ const Signup = () => {
       const { data } = await axios.post(
         "https://zerodha-clone-1-0k9u.onrender.com/api/auth/register",
         {
-          ...inputValue,
-        },
+  name: username,
+  email,
+  password,
+},
         { withCredentials: true }
       );
       const { success, message } = data;

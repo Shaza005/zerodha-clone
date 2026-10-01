@@ -23,6 +23,7 @@ const register = async (req, res) => {
       password: hashedPassword,
     });
     res.status(201).json({
+      success:true,
       message: "User registered successfully",
       user,
     });
