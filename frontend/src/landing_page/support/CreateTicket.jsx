@@ -2,14 +2,17 @@ import React from "react";
 
 function CreateTicket() {
   return (
-    <div className="container my-5 mx-5">
+    <div className="container my-5 px-3 px-md-5">
       <div className="row">
-        <div className="col-8">
-          <div className="accordion mt-5 " id="accordionPanelsStayOpenExample">
-            <div className="accordion-item ">
+
+        {/* Accordion */}
+        <div className="col-12 col-lg-8">
+          <div className="accordion mt-5" id="accordionPanelsStayOpenExample">
+
+            <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button "
+                  className="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseOne"
@@ -19,6 +22,7 @@ function CreateTicket() {
                   Account Opening
                 </button>
               </h2>
+
               <div
                 id="panelsStayOpen-collapseOne"
                 className="accordion-collapse collapse show"
@@ -28,14 +32,14 @@ function CreateTicket() {
                     <li>Residential individual</li>
                     <li>Minor</li>
                     <li>Non Resident Indian</li>
-                    <li>Company,Partnership,HUF and LLP</li>
+                    <li>Company, Partnership, HUF and LLP</li>
                     <li>Glossary</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div className="accordion-item ">
+            <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed"
@@ -48,9 +52,10 @@ function CreateTicket() {
                   Your Zerodha Account
                 </button>
               </h2>
+
               <div
                 id="panelsStayOpen-collapseTwo"
-                className="accordion-collapse collapse "
+                className="accordion-collapse collapse"
               >
                 <div className="accordion-body">
                   <ul>
@@ -65,7 +70,7 @@ function CreateTicket() {
               </div>
             </div>
 
-            <div className="accordion-item ">
+            <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed"
@@ -78,9 +83,10 @@ function CreateTicket() {
                   Kite
                 </button>
               </h2>
+
               <div
                 id="panelsStayOpen-collapseThree"
-                className="accordion-collapse collapse "
+                className="accordion-collapse collapse"
               >
                 <div className="accordion-body">
                   <ul>
@@ -95,7 +101,7 @@ function CreateTicket() {
               </div>
             </div>
 
-            <div className="accordion-item ">
+            <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed"
@@ -108,9 +114,10 @@ function CreateTicket() {
                   Funds
                 </button>
               </h2>
+
               <div
                 id="panelsStayOpen-collapseFour"
-                className="accordion-collapse collapse "
+                className="accordion-collapse collapse"
               >
                 <div className="accordion-body">
                   <ul>
@@ -124,7 +131,7 @@ function CreateTicket() {
               </div>
             </div>
 
-            <div className="accordion-item ">
+            <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed"
@@ -137,9 +144,10 @@ function CreateTicket() {
                   Console
                 </button>
               </h2>
+
               <div
                 id="panelsStayOpen-collapseFive"
-                className="accordion-collapse collapse "
+                className="accordion-collapse collapse"
               >
                 <div className="accordion-body">
                   <ul>
@@ -154,7 +162,7 @@ function CreateTicket() {
               </div>
             </div>
 
-            <div className="accordion-item ">
+            <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button collapsed"
@@ -167,9 +175,10 @@ function CreateTicket() {
                   Coin
                 </button>
               </h2>
+
               <div
                 id="panelsStayOpen-collapseSix"
-                className="accordion-collapse collapse "
+                className="accordion-collapse collapse"
               >
                 <div className="accordion-body">
                   <ul>
@@ -182,23 +191,37 @@ function CreateTicket() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
-        <div className="col-4 p-5">
+
+        {/* Right side cards */}
+        <div className="col-12 col-lg-4 p-3 p-md-5">
+
           <div
-            className="card"
-            style={{ backgroundColor: "rgba(248, 218, 186, 1)" ,borderRadius:"0%",width: "22rem"}}
+            className="card w-100"
+            style={{
+              backgroundColor: "rgba(248, 218, 186, 1)",
+              borderRadius: "0%"
+            }}
           >
             <div className="card-body">
               <ul>
                 <li>Latest Intraday leverages and Square-off timings</li>
-                <br></br>
+                <br />
                 <li>Surveillance measure on scrips - January 2026</li>
               </ul>
             </div>
           </div>
-          <div className="card mt-4" style={{width: "22rem",borderRadius:"0%"}}>
-            <div className="card-header">Quick links</div>
+
+          <div
+            className="card mt-4 w-100"
+            style={{ borderRadius: "0%" }}
+          >
+            <div className="card-header">
+              Quick links
+            </div>
+
             <ol className="list-group list-group-numbered list-group-flush">
               <li className="list-group-item">Track account opening</li>
               <li className="list-group-item">Track segment activation</li>
@@ -207,7 +230,9 @@ function CreateTicket() {
               <li className="list-group-item">Learn how to create a ticket</li>
             </ol>
           </div>
+
         </div>
+
       </div>
     </div>
   );

@@ -41,14 +41,12 @@ const Signup = () => {
         { withCredentials: true }
       );
       const { success, message } = data;
-      if (success) {
-        handleSuccess(message);
-        setTimeout(() => {
-          navigate("/");
-        }, 1000);
-      } else {
-        handleError(message);
-      }
+     if (success) {
+  navigate("/login");
+} else {
+  handleError(message);
+}
+    
     } catch (error) {
       console.log(error);
     }

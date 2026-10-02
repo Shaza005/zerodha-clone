@@ -219,3 +219,51 @@
     color: #fff;
   }
   
+  @media (max-width: 768px) {
+  .container {
+    width: 92%;
+    height: auto;
+    max-height: 90vh;
+    left: 4%;
+    bottom: 5%;
+    overflow-y: auto;
+  }
+
+  .container .header {
+    padding: 12px;
+  }
+
+  .regular-order {
+    padding: 12px 16px;
+  }
+
+  .order-validity {
+    width: 100%;
+  }
+
+  .inputs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .inputs fieldset {
+    flex: 1;
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .inputs fieldset input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .buttons {
+    position: static;
+    padding: 15px 0 0;
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 9px 14px;
+  }
+}

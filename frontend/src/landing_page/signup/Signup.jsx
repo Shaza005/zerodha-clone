@@ -9,6 +9,7 @@ function Signup() {
   const goToLogin = () => {
     window.location.href = "https://zerodha-client.onrender.com/login";
   };
+  
 
   return (
     <div className="signup-container">
